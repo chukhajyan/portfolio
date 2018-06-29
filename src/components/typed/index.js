@@ -8,7 +8,7 @@ class Typing extends Component {
       <div className="typing-component">
         <Typed
           strings={['Here you can find anything.', 'Here you can create anything.']}
-          typeSpeed={25}
+          typeSpeed={30}
           loop
         />
       </div>

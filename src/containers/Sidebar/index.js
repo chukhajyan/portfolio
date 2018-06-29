@@ -10,9 +10,9 @@ class Sidebar extends Component {
     return (
       <div className="sidebar-wrapper">
         <div className="sidebar">
-          <Icon size={26} icon={iosHome} />
-          <Icon size={26} icon={documentText} />
-          <Icon size={26} icon={network} />
+          <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
+          <Icon className="sidebar-document-icon" size={26} icon={documentText} />
+          <Icon className="sidebar-network-icon" size={26} icon={network} />
         </div>
       </div>
     );

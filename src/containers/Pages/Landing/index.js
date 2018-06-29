@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import Typing from '../../../components/typed';
 import Avatar from '../../../components/avatar';
+import Particles from 'react-particles-js';
 import './style.less';
 
 class Sidebar extends Component {
   render() {
     return (
       <div className="landing-wrapper">
+        <Particles />
         <div className="landing">
           <Typing />
           <Avatar />
+
           <div className="about-wrapper">
             <p>
                Contrary to popular belief, Lorem Ipsum is not simply random text.
