@@ -13,21 +13,47 @@
     height: 100%;
     background-color: rgb(16, 13, 16);
 
-    .sidebar-home-icon {
-      svg:hover {
-        color: #FFC000;
+    .home-icon-wrapper:hover {
+      .sidebar-home-icon {
+        svg {
+          color: #FFC000;
+        }
+      }
+
+      .home-icon-text {
+        display: block;
+        transition: opacity 0.2s linear;
+        transform:translate(0);
+        opacity: 1;
+      }
+    }
+    .work-icon-wrapper:hover {
+      .sidebar-document-icon {
+        svg {
+          color: #40C000;
+        }
+      }
+
+      .work-icon-text {
+        display: block;
+        transition: opacity 0.2s linear;
+        transform:translate(0);
+        opacity: 1;
       }
     }
 
-    .sidebar-document-icon {
-      svg:hover {
-        color: #40C000;
+    .network-icon-wrapper:hover {
+      .sidebar-network-icon {
+        svg {
+          color: #0080FF;
+        }
       }
-    }
 
-    .sidebar-network-icon {
-      svg:hover {
-        color: #0080FF;
+      .network-icon-text {
+        display: block;
+        transition: opacity 0.2s linear;
+        transform:translate(0);
+        opacity: 1;
       }
     }
 
@@ -47,5 +73,56 @@
 @media only screen and (max-width: 700px) {
   .sidebar-wrapper {
     display: none;
+  }
+}
+
+.home-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .home-icon-text {
+    color: #FFC000;
+    position: absolute;
+    top: 370px;
+    left: 60px;
+    transition: opacity 0.2s linear;
+    transform:translate(0);
+    opacity: 0;
+  }
+}
+
+.work-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .work-icon-text {
+    color: #40C000;
+    position: absolute;
+    top: 440px;
+    left: 60px;
+    transition: opacity 0.2s linear;
+    transform:translate(0);
+    opacity: 0;
+  }
+}
+
+.network-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .network-icon-text {
+    color: #0080FF;
+    position: absolute;
+    top: 510px;
+    left: 60px;
+    transition: opacity 0.2s linear;
+    transform:translate(0);
+    opacity: 0;
   }
 }
