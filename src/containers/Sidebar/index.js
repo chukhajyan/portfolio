@@ -11,18 +11,41 @@ class Sidebar extends Component {
       <div className="sidebar-wrapper">
         <div className="sidebar">
           <div className="home-icon-wrapper">
-            <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
-            <p className="home-icon-text">Home</p>
+            <li>
+              <b>
+                <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
+              </b>
+
+              <p>
+                <span>Home</span>
+              </p>
+            </li>
           </div>
 
+
+
           <div className="work-icon-wrapper">
-            <Icon className="sidebar-document-icon" size={26} icon={documentText} />
-            <p className="work-icon-text">Work</p>
+            <li>
+              <b>
+                <Icon className="sidebar-home-icon" size={26} icon={documentText} />
+              </b>
+
+              <p>
+                <span>Work</span>
+              </p>
+            </li>
           </div>
 
           <div className="network-icon-wrapper">
-            <Icon className="sidebar-network-icon" size={26} icon={network} />
-            <p className="network-icon-text">Network</p>
+            <li>
+              <b>
+                <Icon className="sidebar-home-icon" size={26} icon={network} />
+              </b>
+
+              <p>
+                <span>Network</span>
+              </p>
+            </li>
           </div>
         </div>
       </div>

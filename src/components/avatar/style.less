@@ -1,9 +1,32 @@
-
 .avatar-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+
+  .image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top: 2px dashed #FFC000;
+    border-right: 2px dashed #FFC000;
+    border-left: 2px dashed white;
+    border-bottom: 2px dashed white;
+    padding: 10px;
+    animation: spin 14s infinite linear;
+  }
+
+  .image-circle img {
+    animation: spin 14s infinite reverse linear;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  @keyframes spin {
+      100% {
+          transform: rotate(1turn);
+      }
+  }
 
   .avatar {
     border-radius: 50%;
@@ -11,6 +34,8 @@
     width: 150px;
   }
 }
+
+
 
 @media only screen and (max-width: 700px) {
   .avatar-wrapper {
@@ -23,11 +48,21 @@
     height: 100px !important;
     width: 100px !important;
   }
+
+  .image-circle {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 @media only screen and (max-width: 350px) {
   .avatar {
     height: 80px !important;
     width: 80px !important;
+  }
+
+  .image-circle {
+    width: 80px !important;
+    height: 80px !important;
   }
 }

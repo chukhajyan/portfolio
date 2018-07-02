@@ -13,46 +13,46 @@
     height: 100%;
     background-color: rgb(16, 13, 16);
 
-    .home-icon-wrapper:hover {
-      .sidebar-home-icon {
-        svg {
-          color: #FFC000;
-        }
+    .home-icon-wrapper {
+      margin: 10px auto;
+
+      svg {
+        color: #FFC000;
       }
 
       .home-icon-text {
         display: block;
         transition: opacity 0.2s linear;
-        transform:translate(0);
+        transform: translate(0);
         opacity: 1;
       }
     }
-    .work-icon-wrapper:hover {
-      .sidebar-document-icon {
-        svg {
-          color: #40C000;
-        }
+    .work-icon-wrapper {
+      margin: 10px auto;
+
+      svg {
+        color: #40C000;
       }
 
       .work-icon-text {
         display: block;
         transition: opacity 0.2s linear;
-        transform:translate(0);
+        transform: translate(0);
         opacity: 1;
       }
     }
 
-    .network-icon-wrapper:hover {
-      .sidebar-network-icon {
-        svg {
-          color: #0080FF;
-        }
+    .network-icon-wrapper {
+      margin: 10px auto;
+
+      svg {
+        color: #0080FF;
       }
 
       .network-icon-text {
         display: block;
         transition: opacity 0.2s linear;
-        transform:translate(0);
+        transform: translate(0);
         opacity: 1;
       }
     }
@@ -63,7 +63,6 @@
       transition: 0.15s linear;
 
       &:hover {
-        transform: scale(1.25);
         transition: 0.15s linear;
       }
     }
@@ -81,6 +80,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 
   .home-icon-text {
     color: #FFC000;
@@ -88,7 +88,7 @@
     top: 370px;
     left: 60px;
     transition: opacity 0.2s linear;
-    transform:translate(0);
+    transform: translate(0);
     opacity: 0;
   }
 }
@@ -98,6 +98,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 
   .work-icon-text {
     color: #40C000;
@@ -105,7 +106,7 @@
     top: 440px;
     left: 60px;
     transition: opacity 0.2s linear;
-    transform:translate(0);
+    transform: translate(0);
     opacity: 0;
   }
 }
@@ -115,6 +116,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 
   .network-icon-text {
     color: #0080FF;
@@ -126,3 +128,43 @@
     opacity: 0;
   }
 }
+
+li {
+    overflow: hidden;
+    background: rgba(46, 43, 46, 0.8);
+    list-style: none;
+    white-space:nowrap;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+    li p {
+        opacity: 0;
+        color: white;
+        max-width: 0;
+        display: inline-block;
+        text-decoration: none;
+        transition: max-width .5s ease-out .1s, opacity .5s ease-out .1s, color;
+    }
+        li p:hover {
+            color: white;
+        }
+        li p span {
+            float:right;
+            display: block;
+            padding-right: 1em;
+        }
+    li b {
+        color: white;
+        line-height:1;
+        font-size: 25px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    li:hover p {
+        opacity: 1;
+        max-width: 150px;
+        transition: max-width .5s ease-out .1s, opacity .5s ease-out .1s, color .2s;
+    }
