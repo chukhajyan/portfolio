@@ -1,7 +1,8 @@
 .landing-wrapper {
   height: 100%;
   background-color: rgb(26, 23, 26);
-  width: calc(100% - 75px);
+  // width: calc(100% - 75px);
+  width: 100%;
   float: right;
 
   .landing {
@@ -10,6 +11,8 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+    width: calc(100% - 75px);
+    margin-left: 75px;
     position: absolute;
     top: 0;
   }
@@ -28,6 +31,8 @@
 
     .landing {
       justify-content: center !important;
+      margin-left: 0 !important;
+      width: 100%;
     }
 
     .particles-wrapper {

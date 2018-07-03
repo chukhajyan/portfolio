@@ -22,8 +22,6 @@ class Sidebar extends Component {
             </li>
           </div>
 
-
-
           <div className="work-icon-wrapper">
             <li>
               <b>
