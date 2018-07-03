@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Landing from '../Pages/Landing';
+import Network from '../Pages/Network';
 import Sidebar from '../Sidebar';
 import MobileSidebar from '../MobileSidebar';
 import './App.less';
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Landing />
-
+        <Network />
       {(window.innerWidth > 700) ? <Sidebar /> : <MobileSidebar />}
 
 
