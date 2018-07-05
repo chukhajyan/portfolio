@@ -1,28 +1,83 @@
 .network-wrapper {
   height: 100vh;
-  background-color: rgb(26, 23, 26);
+  background-color: rgb(36, 33, 36);
+
+  .network {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 
   .social-wrapper {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
 
     .social-icon-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px;
-      width: 150px;
+      height: 50px;
+      width: 50px;
       background-color: white;
+      opacity: 0.95;
       border-radius: 50%;
+      transition: 0.25s linear;
 
-      .sidebar-email-icon {
-        color: #3062de;
+      .social-email-icon {
+        color: #c71610;
       }
 
-      .sidebar-facebook-icon {
-        color: #3b5898
+      .social-twitter-icon {
+        color: #1dcaff;
       }
 
+      .social-linkedin-icon {
+        color: #2877b7;
+      }
+
+      .social-facebook-icon {
+        color: #3B5998;
+      }
+    }
+
+    .social-icon-wrapper-email:hover {
+      background-color: #c71610;
+      transition: 0.25s linear;
+
+      .social-email-icon {
+        color: white;
+      }
+    }
+
+    .social-icon-wrapper-twitter:hover {
+      background-color: #1dcaff;
+      transition: 0.25s linear;
+
+      .social-twitter-icon {
+        color: white;
+      }
+    }
+
+    .social-icon-wrapper-linkedin:hover {
+      background-color: #2877b7;
+      transition: 0.25s linear;
+
+      .social-linkedin-icon {
+        color: white;
+      }
+    }
+
+    .social-icon-wrapper-facebook:hover {
+      background-color: #3B5998;
+      transition: 0.25s linear;
+
+      .social-facebook-icon {
+        color: white;
+      }
     }
   }
 }

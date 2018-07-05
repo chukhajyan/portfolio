@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'react-icons-kit';
 import { iosHome } from 'react-icons-kit/ionicons/iosHome';
-import { documentText } from 'react-icons-kit/ionicons/documentText';
+import { briefcase } from 'react-icons-kit/ionicons/briefcase'
 import { network } from 'react-icons-kit/ionicons/network';
 import ScrollIntoView from 'react-scroll-into-view'
 import './style.less';
@@ -13,28 +13,30 @@ class Sidebar extends Component {
         <div className="sidebar">
           <div className="home-icon-wrapper">
             <ScrollIntoView selector=".landing-wrapper">
-            <li>
-              <b>
-                <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
-              </b>
+              <li>
+                <b>
+                  <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
+                </b>
 
-              <p>
-                <span>Home</span>
-              </p>
-            </li>
+                <p>
+                  <span>Home</span>
+                </p>
+              </li>
             </ScrollIntoView>
           </div>
 
           <div className="work-icon-wrapper">
-            <li>
-              <b>
-                <Icon className="sidebar-home-icon" size={26} icon={documentText} />
-              </b>
+            <ScrollIntoView selector=".work-wrapper">
+              <li>
+                <b>
+                  <Icon className="sidebar-home-icon" size={26} icon={briefcase} />
+                </b>
 
-              <p>
-                <span>Work</span>
-              </p>
-            </li>
+                <p>
+                  <span>Work</span>
+                </p>
+              </li>
+            </ScrollIntoView>
           </div>
 
           <div className="network-icon-wrapper">

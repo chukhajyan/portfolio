@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Icon } from 'react-icons-kit';
-import { iosEmail } from 'react-icons-kit/ionicons/iosEmail';
+import { androidMail } from 'react-icons-kit/ionicons/androidMail';
 import { socialFacebook } from 'react-icons-kit/ionicons/socialFacebook';
+import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
+import { socialLinkedin } from 'react-icons-kit/ionicons/socialLinkedin';
 import './style.less';
 
 class Network extends Component {
@@ -10,21 +12,29 @@ class Network extends Component {
       <div className="network-wrapper">
         <div className="network">
           <div className="social-wrapper">
-            <div className="social-icon-wrapper">
-              <Icon className="sidebar-email-icon" size={72} icon={iosEmail} />
-            </div>
+            <a href="mailto:levon.chukhajyan@gmail.com" alt="Gmail" target="_blank" rel="noopener noreferrer">
+              <div className="social-icon-wrapper social-icon-wrapper-email">
+                <Icon className="social-email-icon" size={24} icon={androidMail} />
+              </div>
+            </a>
 
-            <div className="social-icon-wrapper">
+            <a href="https://twitter.com/chukhajyan" alt="Twitter" target="_blank" rel="noopener noreferrer">
+              <div className="social-icon-wrapper social-icon-wrapper-twitter">
+                <Icon className="social-twitter-icon" size={24} icon={socialTwitter} />
+              </div>
+            </a>
 
-            </div>
+            <a href="https://www.linkedin.com/in/chukhajyan/" alt="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <div className="social-icon-wrapper social-icon-wrapper-linkedin" >
+                  <Icon className="social-linkedin-icon" size={24} icon={socialLinkedin} />
+              </div>
+            </a>
 
-            <div className="social-icon-wrapper">
-
-            </div>
-
-            <div className="social-icon-wrapper">
-              <Icon className="sidebar-facebook-icon" size={72} icon={socialFacebook} />
-            </div>
+            <a href="https://www.facebook.com/levon.chukhajyan" alt="Facebook" target="_blank" rel="noopener noreferrer">
+              <div className="social-icon-wrapper social-icon-wrapper-facebook">
+                <Icon className="social-facebook-icon" size={24} icon={socialFacebook} />
+              </div>
+            </a>
           </div>
         </div>
       </div>
