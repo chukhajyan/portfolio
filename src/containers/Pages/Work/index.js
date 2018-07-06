@@ -10,7 +10,7 @@ class Work extends Component {
         <div className="work">
           <div className="work-portfolio">
             <div className="work-portfolio-1">
-              <WorkItem/>
+              <WorkItem backgroundImage={barcampImage} alt="Barcamp EVN" link="http://barcamp.am"/>
               <WorkItem />
             </div>
           </div>
