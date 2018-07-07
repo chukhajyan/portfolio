@@ -6,7 +6,7 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="avatar-wrapper">
-        <div class="image-circle">
+        <div className="image-circle">
           <img className="avatar" src={catPhoto} alt="Avatar" />
         </div>
         <h3>Levon Chukhajyan</h3>
