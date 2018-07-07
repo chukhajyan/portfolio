@@ -1,14 +1,50 @@
 import React, { Component } from 'react';
 import { stack as Menu } from 'react-burger-menu';
+import ScrollIntoView from 'react-scroll-into-view';
 import './styles.less';
 
 class MobileSidebar extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    }
+  }
+
+  handleStateChange (state) {
+   this.setState({menuOpen: state.isOpen})
+ }
+
+ closeMenu () {
+   this.setState({menuOpen: false})
+ }
+
+ toggleMenu () {
+   this.setState({menuOpen: !this.state.menuOpen})
+ }
+
   render () {
     return (
-      <Menu right>
-        <span className="mobile-link-wrapper"><a id="mobile-home" className="menu-item" href="/">Home</a></span>
-        <span className="mobile-link-wrapper"><a id="mobile-work" className="menu-item" href="/about">Work</a></span>
-        <span className="mobile-link-wrapper"><a id="mobile-network" className="menu-item" href="/contact">Network</a></span>
+      <Menu right
+            isOpen={this.state.menuOpen}
+            onStateChange={(state) => this.handleStateChange(state)}>
+        <span className="mobile-link-wrapper">
+          <ScrollIntoView selector=".landing-wrapper">
+            <a id="mobile-home" className="menu-item" onClick={() => this.closeMenu()}>Home</a>
+          </ScrollIntoView>
+        </span>
+
+        <span className="mobile-link-wrapper">
+          <ScrollIntoView selector=".work-wrapper">
+            <a id="mobile-work" className="menu-item" onClick={() => this.closeMenu()}>Work</a>
+          </ScrollIntoView>
+        </span>
+
+        <span className="mobile-link-wrapper">
+          <ScrollIntoView selector=".network-wrapper">
+            <a id="mobile-network" className="menu-item" onClick={() => this.closeMenu()}>Network</a>
+          </ScrollIntoView>
+        </span>
       </Menu>
     );
   }

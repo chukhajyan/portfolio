@@ -3,7 +3,7 @@ import { Icon } from 'react-icons-kit';
 import { iosHome } from 'react-icons-kit/ionicons/iosHome';
 import { briefcase } from 'react-icons-kit/ionicons/briefcase'
 import { network } from 'react-icons-kit/ionicons/network';
-import ScrollIntoView from 'react-scroll-into-view'
+import ScrollIntoView from 'react-scroll-into-view';
 import './style.less';
 
 class Sidebar extends Component {
