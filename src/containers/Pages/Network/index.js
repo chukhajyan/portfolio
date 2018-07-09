@@ -26,6 +26,16 @@ class Network extends Component {
             </span>
 
             <span className="social-link-wrapper">
+              <a href="https://github.com/chukhajyan" className="social-links" alt="Facebook" target="_blank" rel="noopener noreferrer">
+              {/*  <div className="social-icon-wrapper social-icon-wrapper-facebook">
+                  <Icon className="social-facebook-icon" size={24} icon={socialFacebook} />
+                </div> */}
+
+                GitHub
+              </a>
+            </span>
+
+            <span className="social-link-wrapper">
               <a href="https://www.linkedin.com/in/chukhajyan/" className="social-links" alt="LinkedIn" target="_blank" rel="noopener noreferrer">
               {/* }<div className="social-icon-wrapper social-icon-wrapper-linkedin" >
                     <Icon className="social-linkedin-icon" size={24} icon={socialLinkedin} />

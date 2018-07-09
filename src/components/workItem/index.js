@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import './style.less';
 
-// const workItemStyle = {
-//   backgroundColor: 'white',
-//    backgroundImage: 'url("../../../images/barcamp.png")',
-// };
-
 class WorkItem extends Component {
   render() {
     return (

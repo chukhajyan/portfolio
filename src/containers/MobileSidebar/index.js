@@ -27,7 +27,21 @@ class MobileSidebar extends Component {
     return (
       <Menu right
             isOpen={this.state.menuOpen}
-            onStateChange={(state) => this.handleStateChange(state)}>
+            onStateChange={(state) => this.handleStateChange(state)}
+            customBurgerIcon={ !this.state.menuOpen ?
+                            <div className="menu-icon-wrapper">
+                              <span className="menu-icon-item"> </span>
+                              <span className="menu-icon-item"> </span>
+                              <span className="menu-icon-item"> </span>
+                            </div>
+                              :
+                              <div className="menu-icon-wrapper-cross">
+                                <span className="menu-cross-icon-item menu-cross-icon-item-1"> </span>
+                                <span className="menu-cross-icon-item menu-cross-icon-item-2"> </span>
+                                <span className="menu-cross-icon-item menu-cross-icon-item-3"> </span>
+                              </div>
+                            }
+            >
         <span className="mobile-link-wrapper">
           <ScrollIntoView selector=".landing-wrapper">
             <a id="mobile-home" className="menu-item" onClick={() => this.closeMenu()}>Home</a>
@@ -45,6 +59,7 @@ class MobileSidebar extends Component {
             <a id="mobile-network" className="menu-item" onClick={() => this.closeMenu()}>Network</a>
           </ScrollIntoView>
         </span>
+
       </Menu>
     );
   }
