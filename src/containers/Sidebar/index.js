@@ -15,7 +15,7 @@ class Sidebar extends Component {
             <ScrollIntoView selector=".landing-wrapper">
               <li>
                 <b>
-                  <Icon className="sidebar-home-icon" size={26} icon={iosHome} />
+                  <Icon className="sidebar-home-icon" size={24} icon={iosHome} />
                 </b>
 
                 <p>
@@ -29,7 +29,7 @@ class Sidebar extends Component {
             <ScrollIntoView selector=".work-wrapper">
               <li>
                 <b>
-                  <Icon className="sidebar-home-icon" size={26} icon={briefcase} />
+                  <Icon className="sidebar-home-icon" size={22} icon={briefcase} />
                 </b>
 
                 <p>
@@ -43,7 +43,7 @@ class Sidebar extends Component {
             <ScrollIntoView selector=".network-wrapper">
               <li>
                 <b>
-                  <Icon className="sidebar-home-icon" size={26} icon={network} />
+                  <Icon className="sidebar-home-icon" size={22} icon={network} />
                 </b>
 
                 <p>
