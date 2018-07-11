@@ -3,12 +3,38 @@
   width: 250px;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 0.3s linear;
+  top: 0;
 
   &:hover {
     .overlay {
       background: rgba(255, 255, 255, 0.4);
       opacity: 1;
     }
+
+    .technology-stack {
+      display: block;
+      opacity: 1;
+      transition: 0.25s linear;
+    }
+
+    top: -60px;
+    transition: 0.25s linear;
+  }
+
+  .technology-stack {
+    position: absolute;
+    bottom: -45px;
+    display: none;
+    color: white;
+    transition: 0.3s linear;
+    height: 60px;
+    margin-bottom: -30px;
+    opacity: 0;
   }
 
   img {
@@ -53,5 +79,26 @@
     &:visited {
       text-decoration: none;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .work-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .work-item {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .work-item {
+    height: 150px;
+    width: 150px;
   }
 }
