@@ -9,15 +9,18 @@
   background-color: white;
   transition: 0.3s linear;
   top: 0;
+  border-radius: 10%;
+  box-shadow: 3px 2px #787878;
 
   &:hover {
+    box-shadow: 2px 1px #787878;
+
     .overlay {
       background: rgba(255, 255, 255, 0.4);
       opacity: 1;
     }
 
     .technology-stack {
-      display: block;
       opacity: 1;
       transition: 0.25s linear;
     }
@@ -29,20 +32,17 @@
   .technology-stack {
     position: absolute;
     bottom: -45px;
-    display: none;
     color: white;
-    transition: 0.3s linear;
     height: 60px;
     margin-bottom: -30px;
     opacity: 0;
+    transition: 0.3s linear;
   }
 
   img {
-    height: 100%;
-    width: 100%;
-    display: block;
-    width: 100%;
+    width: 85%;
     height: auto;
+    display: block;
   }
 
   .overlay {
@@ -58,6 +58,7 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    border-radius: 15%;
   }
 
   .work-proceed-button {
@@ -100,5 +101,23 @@
   .work-item {
     height: 150px;
     width: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .work-item {
+      &:hover  {
+        top: 0 !important;
+        left: -50px;
+        transition: 0.25s linear;
+
+        .technology-stack {
+          left: 180px;
+          bottom: 100px !important;
+          transition: 0.2s linear;
+        }
+    }
+
+
   }
 }
