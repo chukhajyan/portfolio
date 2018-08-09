@@ -10,10 +10,12 @@
   transition: 0.3s linear;
   top: 0;
   border-radius: 10%;
-  box-shadow: 3px 2px #787878;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.8);;
+	-moz-box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.8);;
+	box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.8);
 
   &:hover {
-    box-shadow: 2px 1px #787878;
+    box-shadow: none;
 
     .overlay {
       background: rgba(255, 255, 255, 0.4);
@@ -71,7 +73,7 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     background-color: #40C000;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 20px;
     text-decoration: none;
     z-index: 2;
@@ -87,6 +89,11 @@
   .work-item {
     width: 200px;
     height: 200px;
+    transition: 0.3s linear;
+
+    &:hover {
+      transition: 0.3s linear;
+    }
   }
 }
 
@@ -94,6 +101,15 @@
   .work-item {
     width: 175px;
     height: 175px;
+    transition: 0.3s linear;
+
+    &:hover {
+      transition: 0.3s linear;
+    }
+  }
+
+  .technology-stack {
+    margin-left: 16px;
   }
 }
 
@@ -101,6 +117,11 @@
   .work-item {
     height: 150px;
     width: 150px;
+    transition: 0.3s linear;
+
+    &:hover {
+      transition: 0.3s linear;
+    }
   }
 }
 
@@ -119,5 +140,11 @@
     }
 
 
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .work-item {
+    margin-bottom: 80px;
   }
 }
