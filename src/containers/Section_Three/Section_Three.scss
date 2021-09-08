@@ -37,7 +37,6 @@
 
         .project-wrapper {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             width: 100%;
             height: 150px;
@@ -45,22 +44,23 @@
             background-size: cover;
            
             #project-title {
-                font-size: 48px;
+                font-size: 46px;
                 font-family: 'Fredericka the Great', cursive;
                 font-weight: 300;
                 left: 0;
                 transition: linear 0.3s;
                 position: relative;
                 z-index: 3;
+                width: 65%;
+                text-align: left;
             }
 
             .details {
                 position: relative;
                 text-align: left;
-                margin-right: 50px;
                 z-index: 3;
 
-                P {
+                p {
                     font-size: 18px;
                     font-weight: 500;
                 }
@@ -76,6 +76,57 @@
             .project-wrapper-image {
                 opacity: 0.5;
                 transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-three-wrapper {
+        padding: 50px;
+
+        .projects-wrapper {
+            .project-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                height: 180px;
+
+                .project-wrapper-image {
+                    height: 180px;
+                    width: calc(100vw - 100px);
+                }
+
+                #project-title {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .section-three-wrapper {
+        padding: 50px 30px;
+
+        .projects-wrapper {
+            .project-wrapper {
+                .project-wrapper-image {
+                    height: 180px;
+                    width: calc(100vw - 60px);
+                }
+
+                #project-title {
+                    font-size: 32px;
+                }
+
+                .details {
+                    p {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }

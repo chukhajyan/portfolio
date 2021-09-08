@@ -18,17 +18,6 @@ function SectionTwo() {
         </div>
 
         <div className="project-wrapper">
-          <h2 id="project-title">inKin</h2>
-          
-          <div className="details">
-            <p>Front-End Development</p>
-            <p>Mobile Development</p>
-          </div>
-
-          <div className="project-wrapper-image project-wrapper-inkin"></div>
-        </div>
-
-        <div className="project-wrapper">
           <h2 id="project-title">Altop Research</h2>
           
           <div className="details">
@@ -39,10 +28,17 @@ function SectionTwo() {
           <div className="project-wrapper-image project-wrapper-altop"></div>
         </div>
 
-
         <div className="project-wrapper">
+          <h2 id="project-title">inKin</h2>
           
+          <div className="details">
+            <p>Front-End Development</p>
+            <p>Mobile Development</p>
+          </div>
+
+          <div className="project-wrapper-image project-wrapper-inkin"></div>
         </div>
+
 
         <div className="project-wrapper">
           
