@@ -1,4 +1,5 @@
 import './Section_Three.scss';
+import inkin from '../../assets/projects/inkin.png';
 
 function SectionTwo() {
   return (
@@ -7,7 +8,9 @@ function SectionTwo() {
 
       <div className="projects-wrapper">
         <div className="project-wrapper">
+          <div className="project-wrapper-inkin"></div>
           <h2 id="project-title">PROJECT NAME</h2>
+          
 
           <div className="details">
             <p>Project detail down here</p>
