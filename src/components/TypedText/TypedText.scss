@@ -1,0 +1,17 @@
+.typed-text {
+    color: #D0D9CE;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 420px) {
+    .typed-text, .typed-text-cursor {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .typed-text, .typed-text-cursor {
+        font-size: 18px;
+    }
+}
