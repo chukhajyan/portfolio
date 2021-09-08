@@ -19,7 +19,6 @@ function SectionOne() {
 
       <div className="wrapper">
         <div className="brand">
-          {/* <img src={Avatar} className="image-circle" alt="Levon Chukhajyan - (Product Development) Manager" /> */}
           <Avatar className="avatar-svg"/>
           <div className="brand-label">
             <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" aria-hidden="true">
