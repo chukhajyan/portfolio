@@ -11,7 +11,7 @@ function SectionOne() {
       <div className="menu-wrapper">
         <Link to="projects" spy={true} smooth={false}>Projects</Link>
         <Link to="competencies" spy={true} smooth={false}>Competencies</Link>
-        <a href="">Contact Me</a>s
+        <Link to="contact-me" spy={true} smooth={false}>Contact Me</Link>
       </div>
 
       <div className="wrapper">
