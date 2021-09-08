@@ -1,26 +1,44 @@
 import './Section_Three.scss';
-import inkin from '../../assets/projects/inkin.png';
 
 function SectionTwo() {
   return (
     <div className="section-three-wrapper" id="projects">
-      <h1>PROJECTS</h1>
+      {/* <h1>PROJECTS</h1> */}
 
       <div className="projects-wrapper">
         <div className="project-wrapper">
-          <div className="project-wrapper-inkin"></div>
-          <h2 id="project-title">PROJECT NAME</h2>
+        <h2 id="project-title">DappSwarm</h2>
           
-
           <div className="details">
-            <p>Project detail down here</p>
-            <p>Project detail here</p>
+            <p>Product Development</p>
+            <p>Product Management</p>
           </div>
+
+          <div className="project-wrapper-image project-wrapper-dappswarm"></div>
         </div>
 
         <div className="project-wrapper">
+          <h2 id="project-title">inKin</h2>
           
+          <div className="details">
+            <p>Front-End Development</p>
+            <p>Mobile Development</p>
+          </div>
+
+          <div className="project-wrapper-image project-wrapper-inkin"></div>
         </div>
+
+        <div className="project-wrapper">
+          <h2 id="project-title">Altop Research</h2>
+          
+          <div className="details">
+            <p>Product Development</p>
+            <p>Product Management</p>
+          </div>
+
+          <div className="project-wrapper-image project-wrapper-altop"></div>
+        </div>
+
 
         <div className="project-wrapper">
           
