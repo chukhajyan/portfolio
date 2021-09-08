@@ -58,7 +58,9 @@
             .details {
                 position: relative;
                 text-align: left;
+                left: 0;
                 z-index: 3;
+                transition: linear 0.3s;
 
                 p {
                     font-size: 18px;
@@ -101,6 +103,13 @@
                     width: 100%;
                     margin: 0;
                 }
+            }
+        }
+
+        .project-wrapper:hover {
+            .details {
+                left: 20px;
+                transition: linear 0.3s;
             }
         }
     }
