@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+  
+h3 {
+  font-size: 22px;
+}
+
+p, a, span {
+  font-size: 16px;
+  color: #D0D9CE;
+}

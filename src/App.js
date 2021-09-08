@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import SectionOne from './containers/Section_One/Section_One';
+import SectionTwo from './containers/Section_Two/Section_Two';
+import SectionThree from './containers/Section_Three/Section_Three';
+import './App.scss';
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AnimatedCursor 
+        innerSize={8}
+        outerSize={12}
+        color='255, 131, 3'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+      />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </div>
   );
 }
