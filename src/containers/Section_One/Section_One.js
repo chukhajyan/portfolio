@@ -3,18 +3,15 @@ import './Section_One.scss';
 import TypedText from '../../components/TypedText/TypedText';
 import { ReactComponent as ArrowDown } from '../../assets/double-arrow-down.svg';
 import { ReactComponent as Avatar } from '../../assets/avatar.svg';
+import {Link} from 'react-scroll'
 
 function SectionOne() {
   return (
     <>
       <div className="menu-wrapper">
-        <a onClick={() => {
-            let pageHeight = window.innerHeight;
-            console.log(pageHeight);
-            window.scrollBy(0, 2*pageHeight);
-          }}>Projects</a>
-        <a href="">Competencies</a>
-        <a href="">Contact Me</a>
+        <Link to="projects" spy={true} smooth={false}>Projects</Link>
+        <Link to="competencies" spy={true} smooth={false}>Competencies</Link>
+        <a href="">Contact Me</a>s
       </div>
 
       <div className="wrapper">
@@ -36,18 +33,12 @@ function SectionOne() {
       </div>
 
       <div className="about-me-wrapper">
-        <a 
-          className="about-me-clickable-area"
-          onClick={() => {
-            let pageHeight = window.innerHeight;
-            console.log(pageHeight);
-            window.scrollBy(0, pageHeight);
-          }}>
+        <Link to="about-me" spy={true} smooth={false}>
           <h3>About Me</h3>
           <div>
             <ArrowDown className="bounce"/>
           </div>
-        </a>
+        </Link>
       </div>
     </> 
   );
