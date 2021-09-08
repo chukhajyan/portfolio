@@ -6,7 +6,7 @@ function SectionTwo() {
       {/* <h1>PROJECTS</h1> */}
 
       <div className="projects-wrapper">
-        <div className="project-wrapper">
+        <a href="http://dapp-swarm.com/" target="_blank" className="project-wrapper">
         <h2 id="project-title">DappSwarm</h2>
           
           <div className="details">
@@ -15,9 +15,9 @@ function SectionTwo() {
           </div>
 
           <div className="project-wrapper-image project-wrapper-dappswarm"></div>
-        </div>
+        </a>
 
-        <div className="project-wrapper">
+        <a href="https://altop-research.com/" target="_blank" className="project-wrapper">
           <h2 id="project-title">Altop Research</h2>
           
           <div className="details">
@@ -26,9 +26,9 @@ function SectionTwo() {
           </div>
 
           <div className="project-wrapper-image project-wrapper-altop"></div>
-        </div>
+        </a>
 
-        <div className="project-wrapper">
+        <a href="https://www.inkin.com/" target="_blank" className="project-wrapper">
           <h2 id="project-title">inKin</h2>
           
           <div className="details">
@@ -37,16 +37,16 @@ function SectionTwo() {
           </div>
 
           <div className="project-wrapper-image project-wrapper-inkin"></div>
-        </div>
+        </a>
 
 
-        <div className="project-wrapper">
+        <a className="project-wrapper">
           
-        </div>
+        </a>
 
-        <div className="project-wrapper">
+        <a className="project-wrapper">
           
-        </div>
+        </a>
       </div>
     </div>
   );

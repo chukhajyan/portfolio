@@ -42,6 +42,7 @@
             height: 150px;
             border-bottom: 1px solid rgba(#D0D9CE, 0.75);
             background-size: cover;
+            text-decoration: none;
            
             #project-title {
                 font-size: 46px;
@@ -53,6 +54,7 @@
                 z-index: 3;
                 width: 65%;
                 text-align: left;
+                text-decoration: underline;
             }
 
             .details {
