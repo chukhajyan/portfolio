@@ -7,7 +7,7 @@ function SectionTwo() {
 
       <div className="projects-wrapper">
         <div className="project-wrapper">
-          <h2>PROJECT NAME</h2>
+          <h2 id="project-title">PROJECT NAME</h2>
 
           <div className="details">
             <p>Project detail down here</p>

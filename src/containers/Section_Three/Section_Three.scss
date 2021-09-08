@@ -21,14 +21,24 @@
             height: 150px;
             border-bottom: 1px solid #D0D9CE;
 
-            h2 {
+            #project-title {
                 font-size: 48px;
                 font-family: 'Fredericka the Great', cursive;
                 font-weight: 300;
+                left: 0;
+                transition: linear 0.3s;
+                position: relative;
             }
 
             .details {
                 text-align: right;
+            }
+        }
+        .project-wrapper:hover {
+            #project-title {
+                left: 30px;
+                position: relative;
+                transition: linear 0.3s;
             }
         }
     }
