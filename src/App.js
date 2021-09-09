@@ -2,7 +2,6 @@ import SectionOne from './containers/Section_One/Section_One';
 import SectionTwo from './containers/Section_Two/Section_Two';
 import SectionThree from './containers/Section_Three/Section_Three';
 import SectionFour from './containers/Section_Four/Section_Four';
-import SectionFive from './containers/Section_Five/Section_Five';
 import './App.scss';
 import AnimatedCursor from "react-animated-cursor"
 
@@ -21,7 +20,6 @@ function App() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <SectionFive />
     </div>
   );
 }

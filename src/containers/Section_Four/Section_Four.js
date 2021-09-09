@@ -2,8 +2,8 @@ import './Section_Four.scss';
 
 function SectionFour() {
   return (
-    <div className="section-three-wrapper" id="competencies">
-      <h1>competencies</h1>
+    <div className="section-three-wrapper" id="contact-me">
+      <h1>Contact Me</h1>
     </div>
   );
 }
