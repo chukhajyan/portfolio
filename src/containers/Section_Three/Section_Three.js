@@ -17,6 +17,17 @@ function SectionTwo() {
           <div className="project-wrapper-image project-wrapper-dappswarm"></div>
         </a>
 
+        <a className="project-wrapper">
+          <h2 id="project-title">G64 Group</h2>
+          
+          <div className="details">
+            <p>Business Development</p>
+            <p>Product Development</p>
+          </div>
+
+          <div className="project-wrapper-image project-wrapper-g64"></div>
+        </a>
+
         <a href="https://altop-research.com/" target="_blank" className="project-wrapper">
           <h2 id="project-title">Altop Research</h2>
           
@@ -37,15 +48,6 @@ function SectionTwo() {
           </div>
 
           <div className="project-wrapper-image project-wrapper-inkin"></div>
-        </a>
-
-
-        <a className="project-wrapper">
-          
-        </a>
-
-        <a className="project-wrapper">
-          
         </a>
       </div>
     </div>
