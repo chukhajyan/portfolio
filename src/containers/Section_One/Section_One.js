@@ -9,8 +9,8 @@ function SectionOne() {
   return (
     <>
       <div className="menu-wrapper">
-        <Link to="projects" spy={true} smooth={false}>Projects</Link>
-        <Link to="competencies" spy={true} smooth={false}>Competencies</Link>
+        <Link to="projects" spy={true} smooth={false}>Projects & Competencies</Link>
+        {/* <Link to="competencies" spy={true} smooth={false}>Competencies</Link> */}
         <Link to="contact-me" spy={true} smooth={false}>Contact Me</Link>
       </div>
 
