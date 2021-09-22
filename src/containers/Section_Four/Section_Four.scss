@@ -1,0 +1,50 @@
+#contact-me {
+    min-height: 100vh;
+    background-color: #1d1d1d;
+    padding: 00px 100px;
+
+    h1 {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .contact-me-wrapper {
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 185px);
+        align-items: center;
+        flex-direction: column;
+
+        .social-icon-wrapper {
+            a {
+                height: 50px;
+                width: 50px;
+
+                .social-icon {
+                    height: 50px;
+                    width: 50px;
+                    fill: #D0D9CE;
+                    margin: 15px;
+                    padding: 10px;
+                    transition: all 0.2s linear;
+                }
+            }
+
+            a:hover {
+                svg {
+                    fill: #631fa3;
+                    transition: all 0.2s linear;
+                }
+            }
+        }
+
+        .email-link {
+            transition: all 0.2s linear;
+        }
+
+        .email-link:hover {
+            color: #631fa3;
+            transition: all 0.2s linear;
+        }
+    }
+}
