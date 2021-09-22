@@ -12,7 +12,7 @@ function App() {
         innerSize={8}
         outerSize={12}
         color='255, 131, 3'
-        outerAlpha={0.2}
+        outerAlpha={0.2}s
         innerScale={0.7}
         outerScale={5}
       />
