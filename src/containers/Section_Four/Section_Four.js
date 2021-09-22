@@ -11,13 +11,13 @@ function SectionFour() {
 
       <div className="contact-me-wrapper">
         <div className="social-icon-wrapper">
-          <a><LinkedIn className="social-icon" /></a>
-          <a><Medium className="social-icon" /></a>
-          <a><Github className="social-icon" /></a>
-          <a><Twitter className="social-icon" /></a>
+          <a href="https://www.linkedin.com/in/chukhajyan/" target="_blank"><LinkedIn className="social-icon" /></a>
+          <a href="https://medium.com/@chukhajyan" target="_blank"><Medium className="social-icon" /></a>
+          <a href="https://github.com/chukhajyan" target="_blank"><Github className="social-icon" /></a>
+          <a href="https://twitter.com/chukhajyan" target="_blank"><Twitter className="social-icon" /></a>
         </div>
 
-        <p>or <a className="email-link">e-mail me here</a></p>
+        <p>or <a href="mailto:levon.chukhajyan@gmail.com" className="email-link">e-mail me here</a></p>
       </div>
     </div>
   );

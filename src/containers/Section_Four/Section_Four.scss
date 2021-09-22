@@ -39,6 +39,33 @@
         }
 
         .email-link {
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+    
+        .email-link:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            top: 30px;
+            bottom: 0;
+            left: 0;
+            background-color: #631fa3;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+    
+        .email-link:hover:after {
+            transform: scaleX(1);
+            top: 30px;
+            transform-origin: bottom left;
+        }
+
+        .email-link {
             transition: all 0.2s linear;
         }
 
