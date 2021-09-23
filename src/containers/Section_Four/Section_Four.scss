@@ -1,7 +1,7 @@
 #contact-me {
     min-height: 100vh;
     background-color: #1d1d1d;
-    padding: 00px 100px;
+    padding: 0px 100px;
 
     h1 {
         margin-top: 0;
@@ -73,5 +73,17 @@
             color: #631fa3;
             transition: all 0.2s linear;
         }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-me {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #contact-me {
+        padding: 0 30px;
     }
 }
