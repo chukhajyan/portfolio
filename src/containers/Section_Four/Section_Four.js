@@ -19,6 +19,11 @@ function SectionFour() {
 
         <p>or <a href="mailto:levon.chukhajyan@gmail.com" className="email-link">e-mail me here</a></p>
       </div>
+
+      <div className="footer-wrapper">
+        <p>© Copyright 2021 Levon Chukhajyan. All rights reserved. </p>
+        <p>website is created by me</p>
+      </div>
     </div>
   );
 }
